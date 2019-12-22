@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    tools:context="com.example.myapplication.MainActivity">
+
+
+    <include
+        android:id="@+id/my_included_top_bar"
+        layout="@layout/app_bar_main"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp" />
+
+
+    <ListView
+        android:id="@+id/displayCars_listView_ID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_below="@+id/my_included_top_bar"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/addcarbutton_ID_container"
+        app:layout_constraintTop_toBottomOf="@+id/my_included_top_bar"
+         />
+
+<LinearLayout
+    android:id="@+id/addcarbutton_ID_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/addcarbutton_ID"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#008000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/add_car"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+         />
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

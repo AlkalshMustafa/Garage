@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    tools:context="com.example.myapplication.EditCar">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_editcar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp" />
+
+
+    <TextView
+        android:id="@+id/carRegis_txtView_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Car Number"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/carRegis_Edittxt_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/carName_txtView_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/carName_Edittxt_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+
+
+    <TextView
+        android:id="@+id/carModel_txtView_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Model"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/carModel_Edittxt_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/carStatus_txtView_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="23dp"
+        android:text="Is It New?"
+        android:textSize="20sp" />
+
+
+
+    <CheckBox
+        android:id="@+id/checkBox_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Yes"
+        android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--tools:layout_editor_absoluteX="0dp"-->
+        <!--tools:layout_editor_absoluteY="443dp">-->
+
+    <Button
+        android:id="@+id/saveButton_ID"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:layout_marginStart="32dp"
+        android:layout_weight="1"
+        android:background="#008000"
+        android:text="@string/save"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteButton_ID"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="32dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:text="@string/delete"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--</LinearLayout>-->
+
+
+
+</android.support.constraint.ConstraintLayout>
+

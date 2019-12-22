@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#002740"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="visible">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+        <!-- Title -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="left|center"
+            android:lines="1"
+            android:text="Brand Name  :  "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+         <!-- Car Brand Name -->
+        <TextView
+            android:id="@+id/carName_TextView_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="left|center"
+            android:lines="1"
+            android:text="@string/car_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFA939"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+</LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+        <!-- Title -->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:lines="1"
+            android:text="Plate  No.       :  "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <!-- Car Rigistration Number -->
+        <TextView
+            android:id="@+id/carRegis_TextView_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="left|center"
+            android:lines="1"
+            android:text="@string/regist_no"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFA939"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+</LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

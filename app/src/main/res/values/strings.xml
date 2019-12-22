@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Garage</string>
+    <string name="activity2">Add Car</string>
+    <string name="button">Button</string>
+    <string name="text">Car Name</string>
+    <string name="lable">Model</string>
+    <string name="lable2">Is it New .?</string>
+    <string name="title_activity_splash">Garage</string>
+    <string name="regist_no">00000</string>
+    <string name="car_name">- - - - -</string>
+    <string name="add_car">Add Car</string>
+    <string name="plate_no">Plate No.</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+
+</resources>

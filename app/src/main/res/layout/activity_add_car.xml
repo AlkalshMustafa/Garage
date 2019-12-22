@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    tools:context="com.example.myapplication.AddCar">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <include
+            layout="@layout/app_bar_addcar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Car Number"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/carRegistration_editText_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+
+        <TextView
+            android:id="@+id/idTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/text"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/carName_editText_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/lable"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/carModel_editText_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="25dp"
+            android:text="@string/lable2"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/carStatus_checkBox_ID"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Yes"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/addCarButton_ID"
+        android:layout_width="303dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:background="#008000"
+        android:onClick="Add"
+        android:text="Add Car"
+        android:textAlignment="center"
+        android:textColor="#f0f8ff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="OnClick" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/login_imageView_ID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/loginscreen" />
+
+
+    <EditText
+        android:id="@+id/username_editText_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="USERNAME"
+        android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:id="@+id/password_editText_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_editText_ID"
+        android:layout_alignStart="@+id/username_editText_ID"
+        android:layout_below="@+id/username_editText_ID"
+        android:layout_marginTop="23dp"
+        android:hint="PASSWORD"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_editText_ID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="#006400"
+        android:text="Login"
+        android:textColor="#f0f8ff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
